@@ -19,12 +19,12 @@ function App() {
 
   return (
     <div className="flex flex-col overflow-hidden bg-white">
-      <h1>Navbar </h1>
       <Routes> 
       <Route path='/auth' element={<AuthLayout /> } >
         <Route path='login' element={<Login /> } />
         <Route path='register' element={<Register />} />
       </Route>
+
 
       <Route path='/admin' element={<AdminLayout />} >
       <Route path='dashboard' element={<AdminDashboard />} />
